@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    CGRunViewController *runVc = [[CGRunViewController alloc] initWithNibName:@"CGRunViewController" bundle:nil];
-    CGRunViewController *runVc = [[CGRunViewController alloc] init];
+    CGRunViewController *runVc = [[CGRunViewController alloc] initWithNibName:@"CGRunViewController" bundle:nil];
+//    CGRunViewController *runVc = [[CGRunViewController alloc] init];
     [self addChildVc:runVc title:@"运动" image:@"main_tab_title_sport_0" selectedImage:@"main_tab_title_sport_1"];
     
     CGHistoryTableViewController *historyVc = [[CGHistoryTableViewController alloc] init];

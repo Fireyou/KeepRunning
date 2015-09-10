@@ -34,5 +34,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>隐私请求</string>
 </dict>
 </plist>

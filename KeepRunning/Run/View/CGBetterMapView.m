@@ -312,6 +312,7 @@ static NSString *DescriptionOfCLAuthorizationStatus(CLAuthorizationStatus st)
     
     return renderer;
 }
+
 - (void)mapView:(MKMapView *)mapView didChangeUserTrackingMode:(MKUserTrackingMode)mode animated:(BOOL)animated
 {
     [[NSUserDefaults standardUserDefaults] setObject:@(mode) forKey:UserTrackingModePrefsKey];
