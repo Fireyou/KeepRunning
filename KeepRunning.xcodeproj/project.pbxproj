@@ -43,10 +43,24 @@
 		BF7B90A41BA236610092EC0E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90961BA236610092EC0E /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		BF7B90A51BA236610092EC0E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90981BA236610092EC0E /* View+MASAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		BF7B90A61BA236610092EC0E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B909B1BA236610092EC0E /* ViewController+MASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90AA1BA239F20092EC0E /* CGSongsPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90A81BA239F20092EC0E /* CGSongsPlayerController.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90AB1BA239F20092EC0E /* CGSongsPlayerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90A91BA239F20092EC0E /* CGSongsPlayerController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		BF7B90B41BA23A080092EC0E /* CGAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90AC1BA23A080092EC0E /* CGAlbumCell.xib */; settings = {ASSET_TAGS = (); }; };
+		BF7B90B51BA23A080092EC0E /* CGMusicPlayerBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90AE1BA23A080092EC0E /* CGMusicPlayerBar.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90B61BA23A080092EC0E /* CGMusicPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90B01BA23A080092EC0E /* CGMusicPlayerCell.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90B71BA23A080092EC0E /* CGMusicPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90B11BA23A080092EC0E /* CGMusicPlayerCell.xib */; settings = {ASSET_TAGS = (); }; };
+		BF7B90B81BA23A080092EC0E /* CGAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90B31BA23A080092EC0E /* CGAlbumCell.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90BD1BA23A2F0092EC0E /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90BA1BA23A2F0092EC0E /* UIImage+Image.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90BE1BA23A2F0092EC0E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90BC1BA23A2F0092EC0E /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90C51BA23A590092EC0E /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90C11BA23A590092EC0E /* MBProgressHUD+MJ.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90C61BA23A590092EC0E /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90C21BA23A590092EC0E /* MBProgressHUD.bundle */; settings = {ASSET_TAGS = (); }; };
+		BF7B90C71BA23A590092EC0E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90C41BA23A590092EC0E /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90CC1BA23A6B0092EC0E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90C91BA23A6B0092EC0E /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90CD1BA23A6B0092EC0E /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90CB1BA23A6B0092EC0E /* UINavigationBar+Awesome.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90CF1BA23BF40092EC0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90CE1BA23BF40092EC0E /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		BF9F41971BA2011B00F9D84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F41961BA2011B00F9D84B /* main.m */; };
 		BF9F419A1BA2011B00F9D84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F41991BA2011B00F9D84B /* AppDelegate.m */; };
 		BF9F41A01BA2011B00F9D84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9F419E1BA2011B00F9D84B /* Main.storyboard */; };
-		BF9F41A21BA2011B00F9D84B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9F41A11BA2011B00F9D84B /* Images.xcassets */; };
 		BF9F41A51BA2011B00F9D84B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9F41A31BA2011B00F9D84B /* LaunchScreen.xib */; };
 		BF9F41B11BA2011B00F9D84B /* KeepRunningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F41B01BA2011B00F9D84B /* KeepRunningTests.m */; };
 /* End PBXBuildFile section */
@@ -134,13 +148,37 @@
 		BF7B90991BA236610092EC0E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		BF7B909A1BA236610092EC0E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		BF7B909B1BA236610092EC0E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		BF7B90A71BA239F20092EC0E /* CGSongsPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSongsPlayerController.h; sourceTree = "<group>"; };
+		BF7B90A81BA239F20092EC0E /* CGSongsPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSongsPlayerController.m; sourceTree = "<group>"; };
+		BF7B90A91BA239F20092EC0E /* CGSongsPlayerController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CGSongsPlayerController.storyboard; sourceTree = "<group>"; };
+		BF7B90AC1BA23A080092EC0E /* CGAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGAlbumCell.xib; sourceTree = "<group>"; };
+		BF7B90AD1BA23A080092EC0E /* CGMusicPlayerBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMusicPlayerBar.h; sourceTree = "<group>"; };
+		BF7B90AE1BA23A080092EC0E /* CGMusicPlayerBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMusicPlayerBar.m; sourceTree = "<group>"; };
+		BF7B90AF1BA23A080092EC0E /* CGMusicPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMusicPlayerCell.h; sourceTree = "<group>"; };
+		BF7B90B01BA23A080092EC0E /* CGMusicPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMusicPlayerCell.m; sourceTree = "<group>"; };
+		BF7B90B11BA23A080092EC0E /* CGMusicPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGMusicPlayerCell.xib; sourceTree = "<group>"; };
+		BF7B90B21BA23A080092EC0E /* CGAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAlbumCell.h; sourceTree = "<group>"; };
+		BF7B90B31BA23A080092EC0E /* CGAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAlbumCell.m; sourceTree = "<group>"; };
+		BF7B90B91BA23A2F0092EC0E /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		BF7B90BA1BA23A2F0092EC0E /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		BF7B90BB1BA23A2F0092EC0E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BF7B90BC1BA23A2F0092EC0E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BF7B90C01BA23A590092EC0E /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		BF7B90C11BA23A590092EC0E /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		BF7B90C21BA23A590092EC0E /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		BF7B90C31BA23A590092EC0E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BF7B90C41BA23A590092EC0E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BF7B90C81BA23A6B0092EC0E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BF7B90C91BA23A6B0092EC0E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BF7B90CA1BA23A6B0092EC0E /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		BF7B90CB1BA23A6B0092EC0E /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		BF7B90CE1BA23BF40092EC0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF9F41911BA2011B00F9D84B /* KeepRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9F41951BA2011B00F9D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9F41961BA2011B00F9D84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF9F41981BA2011B00F9D84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
 		BF9F41991BA2011B00F9D84B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		BF9F419F1BA2011B00F9D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BF9F41A11BA2011B00F9D84B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF9F41A41BA2011B00F9D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BF9F41AA1BA2011B00F9D84B /* KeepRunningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepRunningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9F41AF1BA2011B00F9D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -216,6 +254,10 @@
 		BF7B8F751BA21EE90092EC0E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				BF7B90B91BA23A2F0092EC0E /* UIImage+Image.h */,
+				BF7B90BA1BA23A2F0092EC0E /* UIImage+Image.m */,
+				BF7B90BB1BA23A2F0092EC0E /* UIView+Extension.h */,
+				BF7B90BC1BA23A2F0092EC0E /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -238,6 +280,11 @@
 				BF7B90481BA22BE40092EC0E /* CrumbPath.m */,
 				BF7B90491BA22BE40092EC0E /* CrumbPathRenderer.h */,
 				BF7B904A1BA22BE40092EC0E /* CrumbPathRenderer.m */,
+				BF7B90C81BA23A6B0092EC0E /* UIView+Extension.h */,
+				BF7B90C91BA23A6B0092EC0E /* UIView+Extension.m */,
+				BF7B90CA1BA23A6B0092EC0E /* UINavigationBar+Awesome.h */,
+				BF7B90CB1BA23A6B0092EC0E /* UINavigationBar+Awesome.m */,
+				BF7B90BF1BA23A590092EC0E /* MBProgressHUD */,
 				BF7B90811BA236610092EC0E /* Masonry */,
 				BF7B90701BA236400092EC0E /* fmdb */,
 				BF7B90611BA2354B0092EC0E /* MZTimerLabel */,
@@ -322,6 +369,9 @@
 			children = (
 				BF7B90301BA226A80092EC0E /* CGMusicViewController.h */,
 				BF7B90311BA226A80092EC0E /* CGMusicViewController.m */,
+				BF7B90A71BA239F20092EC0E /* CGSongsPlayerController.h */,
+				BF7B90A81BA239F20092EC0E /* CGSongsPlayerController.m */,
+				BF7B90A91BA239F20092EC0E /* CGSongsPlayerController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -336,6 +386,14 @@
 		BF7B8F831BA21EE90092EC0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF7B90AC1BA23A080092EC0E /* CGAlbumCell.xib */,
+				BF7B90AD1BA23A080092EC0E /* CGMusicPlayerBar.h */,
+				BF7B90AE1BA23A080092EC0E /* CGMusicPlayerBar.m */,
+				BF7B90AF1BA23A080092EC0E /* CGMusicPlayerCell.h */,
+				BF7B90B01BA23A080092EC0E /* CGMusicPlayerCell.m */,
+				BF7B90B11BA23A080092EC0E /* CGMusicPlayerCell.xib */,
+				BF7B90B21BA23A080092EC0E /* CGAlbumCell.h */,
+				BF7B90B31BA23A080092EC0E /* CGAlbumCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,6 +500,18 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		BF7B90BF1BA23A590092EC0E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B90C01BA23A590092EC0E /* MBProgressHUD+MJ.h */,
+				BF7B90C11BA23A590092EC0E /* MBProgressHUD+MJ.m */,
+				BF7B90C21BA23A590092EC0E /* MBProgressHUD.bundle */,
+				BF7B90C31BA23A590092EC0E /* MBProgressHUD.h */,
+				BF7B90C41BA23A590092EC0E /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		BF9F41881BA2011B00F9D84B = {
 			isa = PBXGroup;
 			children = (
@@ -478,8 +548,8 @@
 		BF9F41941BA2011B00F9D84B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF7B90CE1BA23BF40092EC0E /* Images.xcassets */,
 				BF9F419E1BA2011B00F9D84B /* Main.storyboard */,
-				BF9F41A11BA2011B00F9D84B /* Images.xcassets */,
 				BF9F41A31BA2011B00F9D84B /* LaunchScreen.xib */,
 				BF9F41951BA2011B00F9D84B /* Info.plist */,
 				BF9F41961BA2011B00F9D84B /* main.m */,
@@ -588,9 +658,13 @@
 				BF9F41A01BA2011B00F9D84B /* Main.storyboard in Resources */,
 				BF9F41A51BA2011B00F9D84B /* LaunchScreen.xib in Resources */,
 				BF7B90651BA2354B0092EC0E /* Info.plist in Resources */,
+				BF7B90C61BA23A590092EC0E /* MBProgressHUD.bundle in Resources */,
+				BF7B90CF1BA23BF40092EC0E /* Images.xcassets in Resources */,
+				BF7B90B41BA23A080092EC0E /* CGAlbumCell.xib in Resources */,
+				BF7B90B71BA23A080092EC0E /* CGMusicPlayerCell.xib in Resources */,
 				BF7B905C1BA2347E0092EC0E /* CGRunningViewController.xib in Resources */,
 				BF7B90541BA2325C0092EC0E /* CGRunViewController.xib in Resources */,
-				BF9F41A21BA2011B00F9D84B /* Images.xcassets in Resources */,
+				BF7B90AB1BA239F20092EC0E /* CGSongsPlayerController.storyboard in Resources */,
 				BF7B909C1BA236610092EC0E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,11 +683,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7B90B51BA23A080092EC0E /* CGMusicPlayerBar.m in Sources */,
 				BF7B902F1BA226820092EC0E /* CGMeTableViewController.m in Sources */,
 				BF7B909D1BA236610092EC0E /* MASCompositeConstraint.m in Sources */,
 				BF7B90A61BA236610092EC0E /* ViewController+MASAdditions.m in Sources */,
 				BF7B90A51BA236610092EC0E /* View+MASAdditions.m in Sources */,
 				BF7B90401BA22AAD0092EC0E /* CGBetterMapView.m in Sources */,
+				BF7B90BE1BA23A2F0092EC0E /* UIView+Extension.m in Sources */,
+				BF7B90C71BA23A590092EC0E /* MBProgressHUD.m in Sources */,
+				BF7B90B61BA23A080092EC0E /* CGMusicPlayerCell.m in Sources */,
 				BF7B902C1BA226550092EC0E /* CGHistoryTableViewController.m in Sources */,
 				BF7B907C1BA236400092EC0E /* FMDatabase.m in Sources */,
 				BF7B90381BA227310092EC0E /* CGMainNavigationController.m in Sources */,
@@ -622,22 +700,28 @@
 				BF7B906C1BA236070092EC0E /* CGReadrawMapViewController.m in Sources */,
 				BF7B90291BA225BB0092EC0E /* CGMainTabBarController.m in Sources */,
 				BF7B909E1BA236610092EC0E /* MASConstraint.m in Sources */,
+				BF7B90B81BA23A080092EC0E /* CGAlbumCell.m in Sources */,
 				BF7B90691BA235D80092EC0E /* CGSportInfo.m in Sources */,
+				BF7B90C51BA23A590092EC0E /* MBProgressHUD+MJ.m in Sources */,
+				BF7B90CC1BA23A6B0092EC0E /* UIView+Extension.m in Sources */,
 				BF7B90A21BA236610092EC0E /* MASViewConstraint.m in Sources */,
 				BF7B90801BA236400092EC0E /* FMResultSet.m in Sources */,
 				BF7B90661BA2354B0092EC0E /* MZTimerLabel.m in Sources */,
 				BF9F419A1BA2011B00F9D84B /* AppDelegate.m in Sources */,
 				BF7B90A11BA236610092EC0E /* MASViewAttribute.m in Sources */,
 				BF7B90571BA232CA0092EC0E /* CGRunViewController.m in Sources */,
+				BF7B90AA1BA239F20092EC0E /* CGSongsPlayerController.m in Sources */,
 				BF7B904C1BA22BE40092EC0E /* CrumbPathRenderer.m in Sources */,
 				BF7B90321BA226A80092EC0E /* CGMusicViewController.m in Sources */,
 				BF7B90521BA22ED40092EC0E /* CGHeader.m in Sources */,
+				BF7B90CD1BA23A6B0092EC0E /* UINavigationBar+Awesome.m in Sources */,
 				BF9F41971BA2011B00F9D84B /* main.m in Sources */,
 				BF7B907D1BA236400092EC0E /* FMDatabaseAdditions.m in Sources */,
 				BF7B90A41BA236610092EC0E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				BF7B904B1BA22BE40092EC0E /* CrumbPath.m in Sources */,
 				BF7B907F1BA236400092EC0E /* FMDatabaseQueue.m in Sources */,
 				BF7B909F1BA236610092EC0E /* MASConstraintMaker.m in Sources */,
+				BF7B90BD1BA23A2F0092EC0E /* UIImage+Image.m in Sources */,
 				BF7B907E1BA236400092EC0E /* FMDatabasePool.m in Sources */,
 				BF7B906F1BA2362B0092EC0E /* CGSportInfoSaveTool.m in Sources */,
 				BF7B905B1BA2347E0092EC0E /* CGRunningViewController.m in Sources */,

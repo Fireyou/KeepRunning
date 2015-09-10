@@ -29,7 +29,7 @@
     CGHistoryTableViewController *historyVc = [[CGHistoryTableViewController alloc] init];
     [self addChildVc:historyVc title:@"记录" image:@"main_tab_title_message_0" selectedImage:@"main_tab_title_message_1"];
     
-    UITableViewController *musicVc = [[UITableViewController alloc] init];
+    CGMusicViewController *musicVc = [[CGMusicViewController alloc] init];
     [self addChildVc:musicVc title:@"音乐" image:@"bottom_Icon01" selectedImage:@"bottom_Icon01_on"];
     
     CGMeTableViewController *meVc = [[CGMeTableViewController alloc] init];
