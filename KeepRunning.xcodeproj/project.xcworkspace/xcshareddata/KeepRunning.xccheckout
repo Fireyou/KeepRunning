@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4F7BED9B-04F0-4029-80BE-DA0A400BF70E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KeepRunning</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>07DE257F9F5F58927EF5F33652E72996B3C9C310</key>
+		<string>https://github.com/Fireyou/KeepRunning.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KeepRunning.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>07DE257F9F5F58927EF5F33652E72996B3C9C310</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Fireyou/KeepRunning.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>07DE257F9F5F58927EF5F33652E72996B3C9C310</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>07DE257F9F5F58927EF5F33652E72996B3C9C310</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KeepRunning</string>
+		</dict>
+	</array>
+</dict>
+</plist>

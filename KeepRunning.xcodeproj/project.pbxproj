@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF7B90211BA221D10092EC0E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7B90201BA221D10092EC0E /* MapKit.framework */; };
+		BF7B90231BA221DD0092EC0E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7B90221BA221DD0092EC0E /* libsqlite3.0.tbd */; };
+		BF7B90291BA225BB0092EC0E /* CGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90281BA225BB0092EC0E /* CGMainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B902C1BA226550092EC0E /* CGHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B902B1BA226550092EC0E /* CGHistoryTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B902F1BA226820092EC0E /* CGMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B902E1BA226820092EC0E /* CGMeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90321BA226A80092EC0E /* CGMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90311BA226A80092EC0E /* CGMusicViewController.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90351BA226D90092EC0E /* CGRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90341BA226D90092EC0E /* CGRunViewController.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90381BA227310092EC0E /* CGMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90371BA227310092EC0E /* CGMainNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90401BA22AAD0092EC0E /* CGBetterMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B903F1BA22AAD0092EC0E /* CGBetterMapView.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B904B1BA22BE40092EC0E /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90481BA22BE40092EC0E /* CrumbPath.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B904C1BA22BE40092EC0E /* CrumbPathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B904A1BA22BE40092EC0E /* CrumbPathRenderer.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B90521BA22ED40092EC0E /* CGHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90511BA22ED40092EC0E /* CGHeader.m */; settings = {ASSET_TAGS = (); }; };
 		BF9F41971BA2011B00F9D84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F41961BA2011B00F9D84B /* main.m */; };
 		BF9F419A1BA2011B00F9D84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F41991BA2011B00F9D84B /* AppDelegate.m */; };
-		BF9F419D1BA2011B00F9D84B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F419C1BA2011B00F9D84B /* ViewController.m */; };
 		BF9F41A01BA2011B00F9D84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9F419E1BA2011B00F9D84B /* Main.storyboard */; };
 		BF9F41A21BA2011B00F9D84B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9F41A11BA2011B00F9D84B /* Images.xcassets */; };
 		BF9F41A51BA2011B00F9D84B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9F41A31BA2011B00F9D84B /* LaunchScreen.xib */; };
@@ -27,13 +38,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF7B90201BA221D10092EC0E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BF7B90221BA221DD0092EC0E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BF7B90271BA225BB0092EC0E /* CGMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMainTabBarController.h; sourceTree = "<group>"; };
+		BF7B90281BA225BB0092EC0E /* CGMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMainTabBarController.m; sourceTree = "<group>"; };
+		BF7B902A1BA226550092EC0E /* CGHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHistoryTableViewController.h; sourceTree = "<group>"; };
+		BF7B902B1BA226550092EC0E /* CGHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHistoryTableViewController.m; sourceTree = "<group>"; };
+		BF7B902D1BA226820092EC0E /* CGMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMeTableViewController.h; sourceTree = "<group>"; };
+		BF7B902E1BA226820092EC0E /* CGMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMeTableViewController.m; sourceTree = "<group>"; };
+		BF7B90301BA226A80092EC0E /* CGMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMusicViewController.h; sourceTree = "<group>"; };
+		BF7B90311BA226A80092EC0E /* CGMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMusicViewController.m; sourceTree = "<group>"; };
+		BF7B90331BA226D90092EC0E /* CGRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGRunViewController.h; sourceTree = "<group>"; };
+		BF7B90341BA226D90092EC0E /* CGRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGRunViewController.m; sourceTree = "<group>"; };
+		BF7B90361BA227310092EC0E /* CGMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMainNavigationController.h; sourceTree = "<group>"; };
+		BF7B90371BA227310092EC0E /* CGMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMainNavigationController.m; sourceTree = "<group>"; };
+		BF7B903E1BA22AAD0092EC0E /* CGBetterMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGBetterMapView.h; sourceTree = "<group>"; };
+		BF7B903F1BA22AAD0092EC0E /* CGBetterMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGBetterMapView.m; sourceTree = "<group>"; };
+		BF7B90471BA22BE40092EC0E /* CrumbPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPath.h; sourceTree = "<group>"; };
+		BF7B90481BA22BE40092EC0E /* CrumbPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPath.m; sourceTree = "<group>"; };
+		BF7B90491BA22BE40092EC0E /* CrumbPathRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPathRenderer.h; sourceTree = "<group>"; };
+		BF7B904A1BA22BE40092EC0E /* CrumbPathRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPathRenderer.m; sourceTree = "<group>"; };
+		BF7B90501BA22ED40092EC0E /* CGHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHeader.h; sourceTree = "<group>"; };
+		BF7B90511BA22ED40092EC0E /* CGHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHeader.m; sourceTree = "<group>"; };
 		BF9F41911BA2011B00F9D84B /* KeepRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9F41951BA2011B00F9D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9F41961BA2011B00F9D84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BF9F41981BA2011B00F9D84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BF9F41991BA2011B00F9D84B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF9F419B1BA2011B00F9D84B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF9F419C1BA2011B00F9D84B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF9F41981BA2011B00F9D84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		BF9F41991BA2011B00F9D84B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		BF9F419F1BA2011B00F9D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF9F41A11BA2011B00F9D84B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF9F41A41BA2011B00F9D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7B90231BA221DD0092EC0E /* libsqlite3.0.tbd in Frameworks */,
+				BF7B90211BA221D10092EC0E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +93,212 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF7B8F701BA21EE90092EC0E /* History */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B8F711BA21EE90092EC0E /* Controller */,
+				BF7B8F721BA21EE90092EC0E /* Model */,
+				BF7B8F731BA21EE90092EC0E /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		BF7B8F711BA21EE90092EC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B902A1BA226550092EC0E /* CGHistoryTableViewController.h */,
+				BF7B902B1BA226550092EC0E /* CGHistoryTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF7B8F721BA21EE90092EC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF7B8F731BA21EE90092EC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF7B8F741BA21EE90092EC0E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B8F751BA21EE90092EC0E /* Category */,
+				BF7B8F771BA21EE90092EC0E /* Controller */,
+				BF7B8F781BA21EE90092EC0E /* Lib */,
+				BF7B8F791BA21EE90092EC0E /* Model */,
+				BF7B8F7A1BA21EE90092EC0E /* Other */,
+				BF7B8F7B1BA21EE90092EC0E /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BF7B8F751BA21EE90092EC0E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BF7B8F771BA21EE90092EC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B90271BA225BB0092EC0E /* CGMainTabBarController.h */,
+				BF7B90281BA225BB0092EC0E /* CGMainTabBarController.m */,
+				BF7B90361BA227310092EC0E /* CGMainNavigationController.h */,
+				BF7B90371BA227310092EC0E /* CGMainNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF7B8F781BA21EE90092EC0E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B90471BA22BE40092EC0E /* CrumbPath.h */,
+				BF7B90481BA22BE40092EC0E /* CrumbPath.m */,
+				BF7B90491BA22BE40092EC0E /* CrumbPathRenderer.h */,
+				BF7B904A1BA22BE40092EC0E /* CrumbPathRenderer.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		BF7B8F791BA21EE90092EC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF7B8F7A1BA21EE90092EC0E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F41981BA2011B00F9D84B /* AppDelegate.h */,
+				BF9F41991BA2011B00F9D84B /* AppDelegate.m */,
+				BF7B90501BA22ED40092EC0E /* CGHeader.h */,
+				BF7B90511BA22ED40092EC0E /* CGHeader.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		BF7B8F7B1BA21EE90092EC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF7B8F7C1BA21EE90092EC0E /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B8F7D1BA21EE90092EC0E /* Controller */,
+				BF7B8F7E1BA21EE90092EC0E /* Model */,
+				BF7B8F7F1BA21EE90092EC0E /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		BF7B8F7D1BA21EE90092EC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B902D1BA226820092EC0E /* CGMeTableViewController.h */,
+				BF7B902E1BA226820092EC0E /* CGMeTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF7B8F7E1BA21EE90092EC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF7B8F7F1BA21EE90092EC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF7B8F801BA21EE90092EC0E /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B8F811BA21EE90092EC0E /* Controller */,
+				BF7B8F821BA21EE90092EC0E /* Model */,
+				BF7B8F831BA21EE90092EC0E /* View */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		BF7B8F811BA21EE90092EC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B90301BA226A80092EC0E /* CGMusicViewController.h */,
+				BF7B90311BA226A80092EC0E /* CGMusicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF7B8F821BA21EE90092EC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF7B8F831BA21EE90092EC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF7B8F841BA21EE90092EC0E /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B8F851BA21EE90092EC0E /* Controller */,
+				BF7B8F861BA21EE90092EC0E /* Model */,
+				BF7B8F871BA21EE90092EC0E /* View */,
+			);
+			path = Run;
+			sourceTree = "<group>";
+		};
+		BF7B8F851BA21EE90092EC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B90331BA226D90092EC0E /* CGRunViewController.h */,
+				BF7B90341BA226D90092EC0E /* CGRunViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF7B8F861BA21EE90092EC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF7B8F871BA21EE90092EC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF7B903E1BA22AAD0092EC0E /* CGBetterMapView.h */,
+				BF7B903F1BA22AAD0092EC0E /* CGBetterMapView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BF9F41881BA2011B00F9D84B = {
 			isa = PBXGroup;
 			children = (
+				BF7B90221BA221DD0092EC0E /* libsqlite3.0.tbd */,
+				BF7B90201BA221D10092EC0E /* MapKit.framework */,
 				BF9F41931BA2011B00F9D84B /* KeepRunning */,
 				BF9F41AD1BA2011B00F9D84B /* KeepRunningTests */,
 				BF9F41921BA2011B00F9D84B /* Products */,
@@ -81,13 +317,11 @@
 		BF9F41931BA2011B00F9D84B /* KeepRunning */ = {
 			isa = PBXGroup;
 			children = (
-				BF9F41981BA2011B00F9D84B /* AppDelegate.h */,
-				BF9F41991BA2011B00F9D84B /* AppDelegate.m */,
-				BF9F419B1BA2011B00F9D84B /* ViewController.h */,
-				BF9F419C1BA2011B00F9D84B /* ViewController.m */,
-				BF9F419E1BA2011B00F9D84B /* Main.storyboard */,
-				BF9F41A11BA2011B00F9D84B /* Images.xcassets */,
-				BF9F41A31BA2011B00F9D84B /* LaunchScreen.xib */,
+				BF7B8F741BA21EE90092EC0E /* Main */,
+				BF7B8F701BA21EE90092EC0E /* History */,
+				BF7B8F7C1BA21EE90092EC0E /* Me */,
+				BF7B8F801BA21EE90092EC0E /* Music */,
+				BF7B8F841BA21EE90092EC0E /* Run */,
 				BF9F41941BA2011B00F9D84B /* Supporting Files */,
 			);
 			path = KeepRunning;
@@ -96,6 +330,9 @@
 		BF9F41941BA2011B00F9D84B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF9F419E1BA2011B00F9D84B /* Main.storyboard */,
+				BF9F41A11BA2011B00F9D84B /* Images.xcassets */,
+				BF9F41A31BA2011B00F9D84B /* LaunchScreen.xib */,
 				BF9F41951BA2011B00F9D84B /* Info.plist */,
 				BF9F41961BA2011B00F9D84B /* main.m */,
 			);
@@ -164,7 +401,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CG;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = CHENGuo;
 				TargetAttributes = {
 					BF9F41901BA2011B00F9D84B = {
@@ -220,9 +457,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF9F419D1BA2011B00F9D84B /* ViewController.m in Sources */,
+				BF7B902F1BA226820092EC0E /* CGMeTableViewController.m in Sources */,
+				BF7B90401BA22AAD0092EC0E /* CGBetterMapView.m in Sources */,
+				BF7B902C1BA226550092EC0E /* CGHistoryTableViewController.m in Sources */,
+				BF7B90381BA227310092EC0E /* CGMainNavigationController.m in Sources */,
+				BF7B90291BA225BB0092EC0E /* CGMainTabBarController.m in Sources */,
 				BF9F419A1BA2011B00F9D84B /* AppDelegate.m in Sources */,
+				BF7B904C1BA22BE40092EC0E /* CrumbPathRenderer.m in Sources */,
+				BF7B90321BA226A80092EC0E /* CGMusicViewController.m in Sources */,
+				BF7B90521BA22ED40092EC0E /* CGHeader.m in Sources */,
 				BF9F41971BA2011B00F9D84B /* main.m in Sources */,
+				BF7B90351BA226D90092EC0E /* CGRunViewController.m in Sources */,
+				BF7B904B1BA22BE40092EC0E /* CrumbPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +531,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -349,7 +596,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeepRunning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,7 +608,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeepRunning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -378,6 +629,7 @@
 				);
 				INFOPLIST_FILE = KeepRunningTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepRunning.app/KeepRunning";
 			};
@@ -393,6 +645,7 @@
 				);
 				INFOPLIST_FILE = KeepRunningTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepRunning.app/KeepRunning";
 			};
@@ -417,6 +670,7 @@
 				BF9F41B61BA2011B00F9D84B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF9F41B71BA2011B00F9D84B /* Build configuration list for PBXNativeTarget "KeepRunningTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +679,7 @@
 				BF9F41B91BA2011B00F9D84B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
