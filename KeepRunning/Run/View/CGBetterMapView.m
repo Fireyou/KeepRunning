@@ -68,13 +68,10 @@
                                                  name:NSUserDefaultsDidChangeNotification
                                                object:nil];
     
-    
-    
     // 设置不允许地图旋转
     self.map.rotateEnabled = NO;
     
 }
-
 - (void)dealloc
 {
     // even though we are using ARC we still need to:
@@ -196,6 +193,23 @@
         //自己写的代理
         if ([self.delegate respondsToSelector:@selector(locationManager:didUpdateNewLocation:)]) {
             [self.delegate locationManager:manager didUpdateNewLocation:newLocation];
+            
+            // 一次性执行：
+            static dispatch_once_t onceToken;
+            dispatch_once(&onceToken, ^{
+                
+                CGAnnotation *annotation = [[CGAnnotation alloc] init];
+                annotation.title = @"起点";
+                annotation.subtitle = @"赶紧跑啊！看什么看！";
+                
+                annotation.coordinate = newLocation.coordinate;
+                annotation.icon = @"img_map_startpoint";
+                
+                
+                [self.map addAnnotation:annotation];
+                
+                
+            });
         }
         
         if (self.crumbs == nil)
@@ -321,4 +335,19 @@ static NSString *DescriptionOfCLAuthorizationStatus(CLAuthorizationStatus st)
     [[NSUserDefaults standardUserDefaults] setObject:@(mode) forKey:UserTrackingModePrefsKey];
     
 }
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    if ([annotation isKindOfClass:[CGAnnotation class]] == NO) {
+        return nil;
+    }
+    
+    // 1.创建大头针
+    CGAnnotationView *annoView = [CGAnnotationView annotationViewWithMap:mapView];
+    // 2.设置模型
+    annoView.annotation = annotation;
+    
+    // 3.返回大头针
+    return annoView;
+}
+
 @end

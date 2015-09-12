@@ -11,6 +11,8 @@
 #import "Masonry.h"
 #import "CrumbPath.h"
 #import "CrumbPathRenderer.h"
+#import "CGAnnotation.h"
+#import "CGAnnotationView.h"
 
 @interface CGReadrawMapViewController ()<MKMapViewDelegate>
 @property (nonatomic, strong) CrumbPath *crumbs;
@@ -62,6 +64,27 @@
     }
 
     
+    CLLocation *location = self.locations[0];
+    CGAnnotation *annotation = [[CGAnnotation alloc] init];
+    annotation.title = @"起点";
+//    annotation.subtitle = @"lplp";
+    
+    annotation.coordinate = location.coordinate;
+    annotation.icon = @"img_map_startpoint";
+    
+    location = [self.locations lastObject];
+    CGAnnotation *annotation1 = [[CGAnnotation alloc] init];
+    annotation1.title = @"终点";
+    annotation1.subtitle = @"不错，下次加油";
+    
+    annotation1.coordinate = location.coordinate;
+    
+    annotation1.icon = @"map_annotation_end";
+    
+    [self.map addAnnotations:@[annotation,annotation1]];
+    
+
+    
     
     
 }
@@ -69,7 +92,7 @@
 - (void)drawMapLine:(CLLocation *)newLocation
 {
     
-        
+    
         
         if (self.crumbs == nil)
         {
@@ -181,7 +204,21 @@
     
     return renderer;
 }
-
+#pragma mark - mapKit
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    if ([annotation isKindOfClass:[CGAnnotation class]] == NO) {
+        return nil;
+    }
+    
+    // 1.创建大头针
+    CGAnnotationView *annoView = [CGAnnotationView annotationViewWithMap:mapView];
+    // 2.设置模型
+    annoView.annotation = annotation;
+    
+    // 3.返回大头针
+    return annoView;
+}
 
 
 @end

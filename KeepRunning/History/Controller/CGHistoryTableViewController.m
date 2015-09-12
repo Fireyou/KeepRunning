@@ -12,16 +12,15 @@
 #import "FMDB.h"
 #import "CGSportInfoSaveTool.h"
 
+
 @interface CGHistoryTableViewController ()
 @property (nonatomic, strong) NSMutableArray *sportInfos;
 @end
 
 @implementation CGHistoryTableViewController
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    
-    
-    
 }
 
 #pragma mark - Table view data source
@@ -90,5 +89,7 @@
     
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+
 
 @end

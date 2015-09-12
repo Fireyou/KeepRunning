@@ -110,8 +110,8 @@
 		BF7B90641BA2354B0092EC0E /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		BF7B90671BA235D80092EC0E /* CGSportInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSportInfo.h; sourceTree = "<group>"; };
 		BF7B90681BA235D80092EC0E /* CGSportInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSportInfo.m; sourceTree = "<group>"; };
-		BF7B906A1BA236070092EC0E /* CGReadrawMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGReadrawMapViewController.h; sourceTree = "<group>"; };
-		BF7B906B1BA236070092EC0E /* CGReadrawMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGReadrawMapViewController.m; sourceTree = "<group>"; };
+		BF7B906A1BA236070092EC0E /* CGReadrawMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGReadrawMapViewController.h; path = ../../Run/Controller/CGReadrawMapViewController.h; sourceTree = "<group>"; };
+		BF7B906B1BA236070092EC0E /* CGReadrawMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGReadrawMapViewController.m; path = ../../Run/Controller/CGReadrawMapViewController.m; sourceTree = "<group>"; };
 		BF7B906D1BA2362B0092EC0E /* CGSportInfoSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSportInfoSaveTool.h; sourceTree = "<group>"; };
 		BF7B906E1BA2362B0092EC0E /* CGSportInfoSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSportInfoSaveTool.m; sourceTree = "<group>"; };
 		BF7B90711BA236400092EC0E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -226,6 +226,8 @@
 			children = (
 				BF7B902A1BA226550092EC0E /* CGHistoryTableViewController.h */,
 				BF7B902B1BA226550092EC0E /* CGHistoryTableViewController.m */,
+				BF7B906A1BA236070092EC0E /* CGReadrawMapViewController.h */,
+				BF7B906B1BA236070092EC0E /* CGReadrawMapViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -427,8 +429,6 @@
 				BF7B90581BA2347E0092EC0E /* CGRunningViewController.h */,
 				BF7B90591BA2347E0092EC0E /* CGRunningViewController.m */,
 				BF7B905A1BA2347E0092EC0E /* CGRunningViewController.xib */,
-				BF7B906A1BA236070092EC0E /* CGReadrawMapViewController.h */,
-				BF7B906B1BA236070092EC0E /* CGReadrawMapViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

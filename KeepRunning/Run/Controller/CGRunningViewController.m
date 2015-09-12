@@ -15,9 +15,11 @@
 #import "CGSportInfoSaveTool.h"
 #import "CGHeader.h"
 #import "FMDB.h"
+#import "CGAnnotationView.h"
+#import "CGAnnotation.h"
 
 //static FMDatabase *_db;
-@interface CGRunningViewController ()<CGBetterMapViewDelegate,MZTimerLabelDelegate>
+@interface CGRunningViewController ()<CGBetterMapViewDelegate,MZTimerLabelDelegate,MKMapViewDelegate>
 - (IBAction)pasueOrResume;
 - (IBAction)stop;
 
@@ -48,9 +50,8 @@
     if (!_locations) {
         self.locations = [[NSMutableArray alloc] init];
     }
-    return _locations;
+       return _locations;
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.mapView.delegate = self;
@@ -153,9 +154,22 @@
    
 }
 #pragma mark - CGMapViewDelegate
+- (MKUserLocation *)betterMapViewDemandForFirstCoordinate
+{
+    MKUserLocation *userLocation = [self.locations firstObject];
+    
+    return userLocation;
+}
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateNewLocation:(CLLocation *)userLocation
 {
     [self.locations addObject:userLocation];
+    
+    //拿到第一个点，设置大头针
+    if (self.locations.count == 1) {
+       
+    }
+
     //速度设置
     self.speedLabel.text = [NSString stringWithFormat:@"%.2f Km/h",userLocation.speed * 3.6];
     

@@ -18,11 +18,11 @@
         // 设置大头针标题是否显示
         self.canShowCallout = YES;
         
-        // 设置大头针左边的辅助视图
-        self.leftCalloutAccessoryView = [[UISwitch alloc] init];
-        
-        // 设置大头针右边的辅助视图
-        self.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeContactAdd];
+//        // 设置大头针左边的辅助视图
+//        self.leftCalloutAccessoryView = [[UISwitch alloc] init];
+//        
+//        // 设置大头针右边的辅助视图
+//        self.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeContactAdd];
     }
     return self;
 }
@@ -48,7 +48,7 @@
     [super setAnnotation:annotation];
     
     //     处理自己特有的操作
-    self.image = [UIImage imageNamed:annotation.icon];
+    self.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",annotation.icon ]];
     
 }
 @end

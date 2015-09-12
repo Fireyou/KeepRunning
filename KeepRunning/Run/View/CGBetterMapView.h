@@ -14,7 +14,7 @@
 @protocol CGBetterMapViewDelegate <NSObject>
 @optional
 - (void)locationManager:(CLLocationManager *)manager didUpdateNewLocation:(CLLocation *)userLocation;
-
+- (MKUserLocation *)betterMapViewDemandForFirstCoordinate;
 @end
 
 @interface CGBetterMapView : UIView
