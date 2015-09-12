@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF225D691BA467A700CCFC93 /* CGMusicPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF225D681BA467A700CCFC93 /* CGMusicPlayerCell.xib */; settings = {ASSET_TAGS = (); }; };
 		BF7B90211BA221D10092EC0E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7B90201BA221D10092EC0E /* MapKit.framework */; };
 		BF7B90231BA221DD0092EC0E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7B90221BA221DD0092EC0E /* libsqlite3.0.tbd */; };
 		BF7B90291BA225BB0092EC0E /* CGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90281BA225BB0092EC0E /* CGMainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -48,7 +49,6 @@
 		BF7B90B41BA23A080092EC0E /* CGAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90AC1BA23A080092EC0E /* CGAlbumCell.xib */; settings = {ASSET_TAGS = (); }; };
 		BF7B90B51BA23A080092EC0E /* CGMusicPlayerBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90AE1BA23A080092EC0E /* CGMusicPlayerBar.m */; settings = {ASSET_TAGS = (); }; };
 		BF7B90B61BA23A080092EC0E /* CGMusicPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90B01BA23A080092EC0E /* CGMusicPlayerCell.m */; settings = {ASSET_TAGS = (); }; };
-		BF7B90B71BA23A080092EC0E /* CGMusicPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90B11BA23A080092EC0E /* CGMusicPlayerCell.xib */; settings = {ASSET_TAGS = (); }; };
 		BF7B90B81BA23A080092EC0E /* CGAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90B31BA23A080092EC0E /* CGAlbumCell.m */; settings = {ASSET_TAGS = (); }; };
 		BF7B90BD1BA23A2F0092EC0E /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90BA1BA23A2F0092EC0E /* UIImage+Image.m */; settings = {ASSET_TAGS = (); }; };
 		BF7B90BE1BA23A2F0092EC0E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90BC1BA23A2F0092EC0E /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
@@ -58,6 +58,8 @@
 		BF7B90CC1BA23A6B0092EC0E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90C91BA23A6B0092EC0E /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		BF7B90CD1BA23A6B0092EC0E /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B90CB1BA23A6B0092EC0E /* UINavigationBar+Awesome.m */; settings = {ASSET_TAGS = (); }; };
 		BF7B90CF1BA23BF40092EC0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7B90CE1BA23BF40092EC0E /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		BF7B91191BA2FA080092EC0E /* CGAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B91161BA2FA080092EC0E /* CGAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		BF7B911A1BA2FA080092EC0E /* CGAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B91181BA2FA080092EC0E /* CGAnnotationView.m */; settings = {ASSET_TAGS = (); }; };
 		BF9F41971BA2011B00F9D84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F41961BA2011B00F9D84B /* main.m */; };
 		BF9F419A1BA2011B00F9D84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F41991BA2011B00F9D84B /* AppDelegate.m */; };
 		BF9F41A01BA2011B00F9D84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9F419E1BA2011B00F9D84B /* Main.storyboard */; };
@@ -76,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF225D681BA467A700CCFC93 /* CGMusicPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGMusicPlayerCell.xib; sourceTree = "<group>"; };
 		BF7B90201BA221D10092EC0E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BF7B90221BA221DD0092EC0E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		BF7B90271BA225BB0092EC0E /* CGMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMainTabBarController.h; sourceTree = "<group>"; };
@@ -156,7 +159,6 @@
 		BF7B90AE1BA23A080092EC0E /* CGMusicPlayerBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMusicPlayerBar.m; sourceTree = "<group>"; };
 		BF7B90AF1BA23A080092EC0E /* CGMusicPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMusicPlayerCell.h; sourceTree = "<group>"; };
 		BF7B90B01BA23A080092EC0E /* CGMusicPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMusicPlayerCell.m; sourceTree = "<group>"; };
-		BF7B90B11BA23A080092EC0E /* CGMusicPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGMusicPlayerCell.xib; sourceTree = "<group>"; };
 		BF7B90B21BA23A080092EC0E /* CGAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAlbumCell.h; sourceTree = "<group>"; };
 		BF7B90B31BA23A080092EC0E /* CGAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAlbumCell.m; sourceTree = "<group>"; };
 		BF7B90B91BA23A2F0092EC0E /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
@@ -173,6 +175,10 @@
 		BF7B90CA1BA23A6B0092EC0E /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		BF7B90CB1BA23A6B0092EC0E /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		BF7B90CE1BA23BF40092EC0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF7B91151BA2FA080092EC0E /* CGAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAnnotation.h; sourceTree = "<group>"; };
+		BF7B91161BA2FA080092EC0E /* CGAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAnnotation.m; sourceTree = "<group>"; };
+		BF7B91171BA2FA080092EC0E /* CGAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAnnotationView.h; sourceTree = "<group>"; };
+		BF7B91181BA2FA080092EC0E /* CGAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAnnotationView.m; sourceTree = "<group>"; };
 		BF9F41911BA2011B00F9D84B /* KeepRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9F41951BA2011B00F9D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9F41961BA2011B00F9D84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -317,6 +323,10 @@
 		BF7B8F7B1BA21EE90092EC0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF7B91151BA2FA080092EC0E /* CGAnnotation.h */,
+				BF7B91161BA2FA080092EC0E /* CGAnnotation.m */,
+				BF7B91171BA2FA080092EC0E /* CGAnnotationView.h */,
+				BF7B91181BA2FA080092EC0E /* CGAnnotationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,14 +396,14 @@
 		BF7B8F831BA21EE90092EC0E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BF7B90AC1BA23A080092EC0E /* CGAlbumCell.xib */,
 				BF7B90AD1BA23A080092EC0E /* CGMusicPlayerBar.h */,
 				BF7B90AE1BA23A080092EC0E /* CGMusicPlayerBar.m */,
 				BF7B90AF1BA23A080092EC0E /* CGMusicPlayerCell.h */,
 				BF7B90B01BA23A080092EC0E /* CGMusicPlayerCell.m */,
-				BF7B90B11BA23A080092EC0E /* CGMusicPlayerCell.xib */,
+				BF225D681BA467A700CCFC93 /* CGMusicPlayerCell.xib */,
 				BF7B90B21BA23A080092EC0E /* CGAlbumCell.h */,
 				BF7B90B31BA23A080092EC0E /* CGAlbumCell.m */,
+				BF7B90AC1BA23A080092EC0E /* CGAlbumCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -658,10 +668,10 @@
 				BF9F41A01BA2011B00F9D84B /* Main.storyboard in Resources */,
 				BF9F41A51BA2011B00F9D84B /* LaunchScreen.xib in Resources */,
 				BF7B90651BA2354B0092EC0E /* Info.plist in Resources */,
+				BF225D691BA467A700CCFC93 /* CGMusicPlayerCell.xib in Resources */,
 				BF7B90C61BA23A590092EC0E /* MBProgressHUD.bundle in Resources */,
 				BF7B90CF1BA23BF40092EC0E /* Images.xcassets in Resources */,
 				BF7B90B41BA23A080092EC0E /* CGAlbumCell.xib in Resources */,
-				BF7B90B71BA23A080092EC0E /* CGMusicPlayerCell.xib in Resources */,
 				BF7B905C1BA2347E0092EC0E /* CGRunningViewController.xib in Resources */,
 				BF7B90541BA2325C0092EC0E /* CGRunViewController.xib in Resources */,
 				BF7B90AB1BA239F20092EC0E /* CGSongsPlayerController.storyboard in Resources */,
@@ -683,6 +693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7B91191BA2FA080092EC0E /* CGAnnotation.m in Sources */,
 				BF7B90B51BA23A080092EC0E /* CGMusicPlayerBar.m in Sources */,
 				BF7B902F1BA226820092EC0E /* CGMeTableViewController.m in Sources */,
 				BF7B909D1BA236610092EC0E /* MASCompositeConstraint.m in Sources */,
@@ -723,6 +734,7 @@
 				BF7B909F1BA236610092EC0E /* MASConstraintMaker.m in Sources */,
 				BF7B90BD1BA23A2F0092EC0E /* UIImage+Image.m in Sources */,
 				BF7B907E1BA236400092EC0E /* FMDatabasePool.m in Sources */,
+				BF7B911A1BA2FA080092EC0E /* CGAnnotationView.m in Sources */,
 				BF7B906F1BA2362B0092EC0E /* CGSportInfoSaveTool.m in Sources */,
 				BF7B905B1BA2347E0092EC0E /* CGRunningViewController.m in Sources */,
 			);

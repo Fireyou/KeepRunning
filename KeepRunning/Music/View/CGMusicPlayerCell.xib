@@ -1,52 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CGMusicPlayerCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2r-rQ-7V0" userLabel="歌名">
-                        <rect key="frame" x="70" y="13" width="242" height="23"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnW-dG-Zuk">
-                        <rect key="frame" x="10" y="0.0" width="50" height="49"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="50" id="1V8-LS-Mc4"/>
-                        </constraints>
-                        <state key="normal">
-                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
-                </subviews>
-                <constraints>
-                    <constraint firstItem="vnW-dG-Zuk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="32j-nH-KDo"/>
-                    <constraint firstItem="S2r-rQ-7V0" firstAttribute="leading" secondItem="vnW-dG-Zuk" secondAttribute="trailing" constant="10" id="Awd-19-R09"/>
-                    <constraint firstItem="vnW-dG-Zuk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="N8e-vd-5IO"/>
-                    <constraint firstItem="S2r-rQ-7V0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Wc5-Dp-hEq"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="S2r-rQ-7V0" secondAttribute="bottom" constant="5" id="niw-BB-jcJ"/>
-                    <constraint firstAttribute="bottom" secondItem="vnW-dG-Zuk" secondAttribute="bottom" id="xbu-oa-JX2"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="S2r-rQ-7V0" secondAttribute="trailing" id="zk7-3g-8Au"/>
-                </constraints>
-            </tableViewCellContentView>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CGMusicPlayerCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pig-lK-94H">
+                    <rect key="frame" x="70" y="10" width="470" height="61"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="470" id="wEE-ZL-gHq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8r-yK-1Ve">
+                    <rect key="frame" x="10" y="10" width="50" height="61"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="ldL-WM-URE"/>
+                    </constraints>
+                    <state key="normal" title="1">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a8r-yK-1Ve" secondAttribute="bottom" constant="10" id="7Xq-12-D6s"/>
+                <constraint firstItem="pig-lK-94H" firstAttribute="leading" secondItem="a8r-yK-1Ve" secondAttribute="trailing" constant="10" id="DK7-cO-A2p"/>
+                <constraint firstAttribute="bottom" secondItem="pig-lK-94H" secondAttribute="bottom" constant="10" id="FgO-GN-4gU"/>
+                <constraint firstItem="a8r-yK-1Ve" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Xhk-cO-PR4"/>
+                <constraint firstItem="pig-lK-94H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="YCa-sB-UJU"/>
+                <constraint firstItem="a8r-yK-1Ve" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="b2t-a0-gs0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="leftBtn" destination="vnW-dG-Zuk" id="0CQ-At-Qsg"/>
-                <outlet property="songNameLabel" destination="S2r-rQ-7V0" id="hsY-ku-9aU"/>
+                <outlet property="leftBtn" destination="a8r-yK-1Ve" id="f8x-Eg-e83"/>
+                <outlet property="songNameLabel" destination="pig-lK-94H" id="fgP-Ev-soA"/>
             </connections>
-            <point key="canvasLocation" x="471" y="364"/>
-        </tableViewCell>
+            <point key="canvasLocation" x="406" y="118.5"/>
+        </view>
     </objects>
 </document>

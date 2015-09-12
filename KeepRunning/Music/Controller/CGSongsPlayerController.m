@@ -75,6 +75,7 @@
 }
 - (void)viewWillDisappear:(BOOL)animated
 {
+    //这是关于 navigationbar 效果的设定
     [super viewWillDisappear:animated];
     self.tableView.delegate = nil;
     [self.navigationController.navigationBar lt_reset];
@@ -129,15 +130,25 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+//    // 1.创建cell
+//    static NSString *ID = @"contact";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+//    }
+    
+
     // 1.创建cell
     CGMusicPlayerCell *cell = [CGMusicPlayerCell cellWithTableView:tableView];
     
     // 2.设置cell的数据
     MPMediaItem *item = self.itemCollection.items[indexPath.row];
     
+//    cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     cell.songName = item.title;
-    
-//    cell.leftBtnImage = nil;
+//
+////    cell.leftBtnImage = nil;
     cell.number = (int)indexPath.row;
 //    被选中cell显示不同图片
 //    if (indexPath == self.selectedCellPath) {
@@ -154,7 +165,8 @@
 //
 //        
 //    }
-//    
+//
+//    NSLog(@"%d",cell.number);
     
     return cell;
 }

@@ -29,6 +29,8 @@
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"CGMusicPlayerCell" owner:nil options:nil] lastObject];
     }
+    
+    
     return cell;
 }
 
@@ -56,13 +58,14 @@
 {
     _songName = songName;
     self.songNameLabel.text = songName;
+    
 }
 - (void)setNumber:(int)number
 {
     _number = number;
     
         [self.leftBtn setTitle:[NSString stringWithFormat:@"%d",number + 1] forState:(UIControlStateNormal)];
-
+    
     
     
 }

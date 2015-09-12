@@ -11,6 +11,8 @@
 #import "CrumbPath.h"
 #import "CrumbPathRenderer.h"
 #import "CGHeader.h"
+#import "CGAnnotation.h"
+#import "CGAnnotationView.h"
 
 #define kDebugShowArea 1
 
@@ -88,6 +90,35 @@
     self.locationManager.delegate = nil;
     
 }
+#pragma mark - SwitchMode
+- (void)handleUIApplicationDidEnterBackgroundNotification:(NSNotification *)note
+{
+    [self switchToBackgroundMode:YES];
+}
+
+- (void)handleUIApplicationWillEnterForegroundNotification :(NSNotification *)note
+{
+    [self switchToBackgroundMode:NO];
+}
+
+// called when the app is moved to the background (user presses the home button) or to the foreground
+//
+- (void)switchToBackgroundMode:(BOOL)background
+{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:TrackLocationInBackgroundPrefsKey])
+    {
+        return; // nothing to do, just keep tracking location
+    }
+    
+    if (background)
+    {
+        [self.locationManager stopUpdatingLocation];
+    }
+    else
+    {
+        [self.locationManager startUpdatingLocation];
+    }
+}
 
 #pragma mark - Location Tracking
 
@@ -133,34 +164,6 @@
                                                object:nil];
 }
 
-- (void)handleUIApplicationDidEnterBackgroundNotification:(NSNotification *)note
-{
-    [self switchToBackgroundMode:YES];
-}
-
-- (void)handleUIApplicationWillEnterForegroundNotification :(NSNotification *)note
-{
-    [self switchToBackgroundMode:NO];
-}
-
-// called when the app is moved to the background (user presses the home button) or to the foreground
-//
-- (void)switchToBackgroundMode:(BOOL)background
-{
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:TrackLocationInBackgroundPrefsKey])
-    {
-        return; // nothing to do, just keep tracking location
-    }
-    
-    if (background)
-    {
-        [self.locationManager stopUpdatingLocation];
-    }
-    else
-    {
-        [self.locationManager startUpdatingLocation];
-    }
-}
 - (MKCoordinateRegion)coordinateRegionWithCenter:(CLLocationCoordinate2D)centerCoordinate approximateRadiusInMeters:(CLLocationDistance)radiusInMeters
 {
     // Multiplying by MKMapPointsPerMeterAtLatitude at the center is only approximate, since latitude isn't fixed
