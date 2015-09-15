@@ -26,8 +26,6 @@
 {
     if (!_locations) {
         self.locations = [[NSMutableArray alloc] init];
-        
-        
     }
     
     return _locations;
@@ -204,6 +202,7 @@
     
     return renderer;
 }
+
 #pragma mark - mapKit
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {

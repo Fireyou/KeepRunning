@@ -65,7 +65,7 @@ const FMDatabase *_db;
         [sportInfos replaceObjectAtIndex:i withObject:array];
     }
     
-    sportInfos = sportInfos;
+//    sportInfos = sportInfos;
     return sportInfos;
 }
 

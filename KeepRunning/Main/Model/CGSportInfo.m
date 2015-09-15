@@ -17,6 +17,7 @@
     [encoder encodeObject:self.runKilometers forKey:@"runKilometers"];
     [encoder encodeObject:self.averageSpeed forKey:@"averageSpeed"];
     [encoder encodeObject:self.saveID forKey:@"saveID"];
+    [encoder encodeObject:self.timeUsed forKey:@"timeUsed"];
 }
 
 - (id)initWithCoder:(NSCoder *)decoder
@@ -28,6 +29,7 @@
         self.runKilometers = [decoder decodeObjectForKey:@"runKilometers"];
         self.averageSpeed = [decoder decodeObjectForKey:@"averageSpeed"];
         self.saveID = [decoder decodeObjectForKey:@"saveID"];
+        self.timeUsed = [decoder decodeObjectForKey:@"timeUsed"];
     }
     return self;
 }

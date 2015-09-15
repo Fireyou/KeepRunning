@@ -12,15 +12,28 @@
 @interface CGSportInfo : NSObject <NSCoding>
 
 /** 总共运动用时 */
-@property (nonatomic, copy) NSString *totalTimeUsed;
-
+@property (nonatomic, assign) float totalTimeUsed;
 /** 总共运动距离 */
-@property (nonatomic, assign) int totalRunKilometers;
+@property (nonatomic, assign) float totalRunKilometers;
 
 /** 总共消耗卡路里 */
-@property (nonatomic, assign) int totalEnergie;
+@property (nonatomic, assign) float totalEnergie;
+
+//单次之最
+/** 单次最大消耗 */
+@property (nonatomic, assign) float maxEnergie;
+
+/** 单次最长时间 */
+@property (nonatomic, assign) float maxTimeUsed;
+
+/** 单次最长距离 */
+@property (nonatomic, assign) float maxKilometers;
 
 //需要储存的东西
+
+/** 每次运动时长 */
+@property (nonatomic, strong) NSNumber *timeUsed;
+
 /** 每次消耗的卡路里 */
 @property (nonatomic, strong) NSNumber *energie;
 

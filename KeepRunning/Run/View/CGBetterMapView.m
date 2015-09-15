@@ -22,6 +22,7 @@
 @property (nonatomic, strong) CrumbPathRenderer *crumbPathRenderer;
 @property (nonatomic, strong) MKPolygonRenderer *drawingAreaRenderer;
 @property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, assign) int countForAnnotation;
 @end
 
 @implementation CGBetterMapView
@@ -70,7 +71,7 @@
     
     // 设置不允许地图旋转
     self.map.rotateEnabled = NO;
-    
+   
 }
 - (void)dealloc
 {
@@ -84,8 +85,10 @@
     // 2) manually unregister for delegate callbacks,
     // As of iOS 7, most system objects still use __unsafe_unretained delegates for compatibility.
     //
+    [self.locationManager stopUpdatingLocation];
     self.locationManager.delegate = nil;
-    
+    self.map = nil;
+    NSLog(@"%s",__func__);
 }
 #pragma mark - SwitchMode
 - (void)handleUIApplicationDidEnterBackgroundNotification:(NSNotification *)note
@@ -182,6 +185,33 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
+    //设置起点的大头针
+    self.countForAnnotation++;
+    //特殊处理，消除第一个点，因为第一个点的位置跟上一次结束的位置有关，回影响显示效果
+    if (self.countForAnnotation == 1) {
+        NSMutableArray *array = (NSMutableArray *)locations;
+        [array removeAllObjects];
+        locations = array;
+        return;
+    }
+    
+    if (self.countForAnnotation == 2) {
+        CLLocation *newLocation = locations[0];
+        
+        CGAnnotation *annotation = [[CGAnnotation alloc] init];
+        annotation.title = @"起点";
+        annotation.subtitle = @"赶紧跑啊！看什么看！";
+        
+        annotation.coordinate = newLocation.coordinate;
+        annotation.icon = @"img_map_startpoint";
+        
+        
+        [self.map addAnnotation:annotation];
+        // 防止越界
+    }else if (self.countForAnnotation > 100){
+        self.countForAnnotation = 3;
+    }
+    
     
     if (locations != nil && locations.count > 0)
     {
@@ -194,22 +224,6 @@
         if ([self.delegate respondsToSelector:@selector(locationManager:didUpdateNewLocation:)]) {
             [self.delegate locationManager:manager didUpdateNewLocation:newLocation];
             
-            // 一次性执行：
-            static dispatch_once_t onceToken;
-            dispatch_once(&onceToken, ^{
-                
-                CGAnnotation *annotation = [[CGAnnotation alloc] init];
-                annotation.title = @"起点";
-                annotation.subtitle = @"赶紧跑啊！看什么看！";
-                
-                annotation.coordinate = newLocation.coordinate;
-                annotation.icon = @"img_map_startpoint";
-                
-                
-                [self.map addAnnotation:annotation];
-                
-                
-            });
         }
         
         if (self.crumbs == nil)
@@ -224,7 +238,7 @@
             CLLocationCoordinate2D newCoordinate = newLocation.coordinate;
             
             // default -boundingMapRect size is 1km^2 centered on coord
-            MKCoordinateRegion region = [self coordinateRegionWithCenter:newCoordinate approximateRadiusInMeters:2500];
+            MKCoordinateRegion region = [self coordinateRegionWithCenter:newCoordinate approximateRadiusInMeters:200];
             
             [self.map setRegion:region animated:YES];
         }

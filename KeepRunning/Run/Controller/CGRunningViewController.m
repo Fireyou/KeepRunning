@@ -60,6 +60,7 @@
     
     self.stopBtn.layer.cornerRadius = 5;
     self.pauseBtn.layer.cornerRadius = 5;
+    
     self.runDistance = 0;
     self.preTime = 0;
     self.energie = 0;
@@ -74,7 +75,10 @@
     
     
 }
-
+- (void)dealloc
+{
+    NSLog(@"%s",__func__);
+}
 - (void)viewDidAppear:(BOOL)animated
 {
     NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
@@ -124,7 +128,10 @@
     //运动公里数
     sportInfo.runKilometers = [NSNumber numberWithFloat:self.runDistance];
     
-    
+    //运动时长
+    sportInfo.timeUsed = [NSNumber numberWithFloat:self.preTime];
+   
+
     //添加当前时间
     NSDate *now = [NSDate date];
     
@@ -140,15 +147,13 @@
     //把ID存为201508这种格式
     sportInfo.saveID = [NSNumber numberWithInt:[NSString stringWithFormat:@"%ld%02ld",(long)year,(long)month].intValue];
     
-    
-    
-    //添加跑步路线
+        //添加跑步路线
     sportInfo.runLine = self.locations;
     //归档数组
     [CGSportInfoSaveTool addsportInfo:sportInfo];
     
 
-    
+    [self.navigationController popToRootViewControllerAnimated:YES];
     
     
    
